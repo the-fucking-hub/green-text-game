@@ -3,8 +3,8 @@
        <img :src="imgUrl" alt="">
      <div>
        <p class="green">
-           >Be me<br> 
-           >Red Army GigaChad<br> 
+           >Be me <br>
+           >Red Army GigaChad<br>
            >Go to Omegle<br>
            >Cosplay myself into some random Moslim from Palestin<br>
            >Meet a black man with a big nose who calls me Nigga from the first second.

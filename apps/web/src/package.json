@@ -1,5 +1,5 @@
 {
-  "name": "green-text-generator",
+  "name": "@greentext/frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,11 +8,17 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "prettier": "tools/prettier-config",
+  "eslint": "tools/eslint-config",
   "dependencies": {
+    "@features/core": "workspace:*",
+    "ui": "workspace:*",
     "vue": "^3.3.4"
   },
   "devDependencies": {
+    "prettier": "^3.0.0",
     "@vitejs/plugin-vue": "^4.2.3",
+    "tools": "workspace:*",
     "vite": "^4.4.5"
   }
 }

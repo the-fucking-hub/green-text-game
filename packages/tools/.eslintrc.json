@@ -1,0 +1,57 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "jquery": true,
+        "es2022": true,
+        "jest": true,
+        "vue/setup-compiler-macros": true
+    },
+    "extends": ["eslint:recommended", "plugin:vue/vue3-recommended"],
+    "rules": {
+        "no-debugger": "off",
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "double"],
+        "curly": ["error", "all"],
+        "semi": ["error", "always"],
+        "vue/html-indent": ["error", 4],
+        "vue/max-attributes-per-line": [
+            "error",
+            {
+                "singleline": 10,
+                "multiline": 10
+            }
+        ],
+        "vue/singleline-html-element-content-newline": "off",
+        "vue/multiline-html-element-content-newline": "off",
+        "vue/no-mutating-props": "off",
+        "vue/html-self-closing": [
+            "error",
+            {
+                "html": {
+                    "void": "always",
+                    "normal": "always",
+                    "component": "always"
+                },
+                "svg": "always",
+                "math": "always"
+            }
+        ],
+        "vue/multi-word-component-names": 0
+    },
+    "globals": {
+        "require": "readonly",
+        "__DEBUG__": "readonly",
+        "__app_version__": "readonly",
+        "__app_patch__": "readonly",
+        "module": "readonly",
+        "__dirname": "readonly",
+        "global": "readonly",
+        "process": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 13,
+        "sourceType": "module"
+    },
+    "ignorePatterns": ["**/node_modules/**", "**/dist/**", "**/vendors/**", "applications/*/test/**"]
+}

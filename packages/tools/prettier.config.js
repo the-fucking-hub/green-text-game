@@ -1,0 +1,16 @@
+module.exports = {
+    $schema: "http://json.schemastore.org/prettierrc",
+    printWidth: 250,
+    useTabs: false,
+    tabWidth: 4,
+    singleQuote: false,
+    semi: true,
+    trailingComma: "none",
+    arrowParens: "always",
+    bracketSpacing: false,
+    jsxBracketSameLine: false,
+    proseWrap: "always",
+    htmlWhitespaceSensitivity: "ignore",
+    vueIndentScriptAndStyle: false,
+    endOfLine: "lf"
+};

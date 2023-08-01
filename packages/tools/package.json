@@ -1,0 +1,33 @@
+{
+    "name": "tools",
+    "version": "1.0.0",
+    "private": true,
+    "devDependencies": {
+        "eslint": "^8.35.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-cypress": "^2.12.1",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-promise": "^6.1.1",
+        "eslint-plugin-vue": "^9.9.0",
+        "prettier": "^3.0.0"
+    },
+    "exports": {
+        "./prettier": {
+            "import": "./prettier",
+            "require":"./prettier"
+        },
+        "./eslint": {
+            "import": "./eslint",
+            "require":"./eslint"
+        },
+        "./eslint-config": {
+            "import": "./.eslintrc.json",
+            "require": "./.eslintrc.json"
+        },
+        "./prettier-config": {
+            "import": "./prettier.config.js",
+            "require": "./prettier.config.js"
+        }
+    }
+}
