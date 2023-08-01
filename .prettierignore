@@ -1,0 +1,21 @@
+# npm
+package-lock.json
+**/node_modules
+npm-debug.log*
+
+# yarn
+.yarnrc
+yarn-error.log
+yarn.lock
+
+# lerna
+lerna-debug.log*
+
+# storybook
+storybook-static
+
+**/dist/**
+**/coverage/**
+
+# pnpm
+.pnpm-store/

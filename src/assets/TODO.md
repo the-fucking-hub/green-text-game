@@ -1,0 +1,1 @@
+read about assets management in vite doc

@@ -1,0 +1,32 @@
+{
+    "env": {
+        "browser": true,
+        "es2022": true,
+        "node": true
+    },
+    "extends": ["eslint:recommended", "prettier"],
+    "plugins": ["prettier"],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-debugger": "off",
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "double"],
+        "curly": ["error", "all"],
+        "semi": ["error", "always"]
+    },
+    "globals": {
+        "require": "readonly",
+        "__DEBUG__": "readonly",
+        "__app_version__": "readonly",
+        "__app_patch__": "readonly",
+        "module": "readonly",
+        "__dirname": "readonly",
+        "global": "readonly",
+        "process": "readonly"
+    },
+
+    "ignorePatterns": ["**/node_modules/**", "**/dist/**", "**/vendors/**", "applications/*/test/**"]
+}
