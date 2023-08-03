@@ -2,9 +2,7 @@
     "root": true,
     "env": {
         "browser": true,
-        "jquery": true,
         "es2022": true,
-        "jest": true,
         "vue/setup-compiler-macros": true
     },
     "extends": ["eslint:recommended", "plugin:vue/vue3-recommended"],

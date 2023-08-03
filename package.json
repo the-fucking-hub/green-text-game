@@ -1,0 +1,20 @@
+{
+    "name": "greentext",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "build": "pnpm install -w -r --shamefully-hoist=true --hoist-pattern=*"
+    },
+    "devDependencies": {
+        "prettier": "^3.0.0",
+        "eslint": "^8.35.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-promise": "^6.1.1",
+        "eslint-plugin-vue": "^9.9.0"
+    }
+}

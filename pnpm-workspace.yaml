@@ -1,5 +1,4 @@
 workspaces:
-  - apps/*
-  - packages/*
-  - packages/features/*
-  - packages/ui/*
+    - apps/*
+    - packages/*
+    - packages/library/*
