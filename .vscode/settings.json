@@ -1,0 +1,62 @@
+{
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.detectIndentation": false,
+    "files.exclude": {
+        "**/*.log": true,
+        "**/*.log*": true,
+        "**/coverage": true,
+        "bin/**": true,
+        "go/**": true,
+        "python3/**": true,
+        ".cache/**": true,
+        ".npm/**": true,
+        ".scannerwork": true,
+        ".sonar": true,
+        ".vscode-server": true
+    },
+
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/*.log": true,
+        "**/*.log*": true,
+        "**/dist": true,
+        "**/coverage": true,
+        "bin/**": true,
+        "go/**": true,
+        "python3/**": true,
+        ".cache/**": true,
+        ".npm/**": true,
+        ".scannerwork": true,
+        ".sonar": true,
+        ".vscode-server": true
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": ["javascript", "javascriptreact", "vue", "vue-html", "html"],
+    "eslint.options": {"overrideConfigFile": ".eslintrc.js"},
+    "javascript.format.enable": false,
+    "json.format.enable": false,
+    "css.validate": false,
+    "scss.validate": false,
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 80
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}

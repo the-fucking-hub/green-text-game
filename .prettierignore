@@ -8,14 +8,10 @@ npm-debug.log*
 yarn-error.log
 yarn.lock
 
-# lerna
-lerna-debug.log*
+#pnpm
+pnpm-lock.yaml
 
-# storybook
-storybook-static
+#markdown
+*.md
 
 **/dist/**
-**/coverage/**
-
-# pnpm
-.pnpm-store/

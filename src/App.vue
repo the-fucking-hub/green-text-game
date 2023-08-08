@@ -1,55 +1,85 @@
-<template>
-  <div class="flex">
-       <img :src="imgUrl" alt="">
-     <div>
-       <p class="green">
-           >Be me<br> 
-           >Red Army GigaChad<br> 
-           >Go to Omegle<br>
-           >Cosplay myself into some random Moslim from Palestin<br>
-           >Meet a black man with a big nose who calls me Nigga from the first second.
-           <br>
-       </p>
-       <p class="red">Bro i just meet Ishowspeed.
-           Love it.
-       </p>
-     </div>
-   </div>
-</template>
-
 <script setup>
-/**
- * @todo find better
- */
-const imgUrl = new URL('assets/a0ca5c9e9ef2a6c10351cc96c7abd3f4.webp', import.meta.url).href
+import {RouterLink, RouterView} from "vue-router";
+import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
+<template>
+    <header>
+        <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+
+        <div class="wrapper">
+            <HelloWorld msg="You did it!" />
+
+            <nav>
+                <RouterLink to="/">Home</RouterLink>
+                <RouterLink to="/about">About</RouterLink>
+            </nav>
+        </div>
+    </header>
+
+    <RouterView />
+</template>
 
 <style scoped>
-.back {
-    background-color: #f6e9e1;
-}
-.flex {
-    display: flex;
+header {
+    line-height: 1.5;
+    max-height: 100vh;
 }
 
-.green {
-    font-size: 20px;
-    color: #9BAD4E;
+.logo {
+    display: block;
+    margin: 0 auto 2rem;
 }
 
-.red {
-    font-size: 20px;
-    color: #653333;
+nav {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 2rem;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+nav a.router-link-exact-active {
+    color: var(--color-text);
 }
 
-img {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+nav a.router-link-exact-active:hover {
+    background-color: transparent;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0 1rem;
+    border-left: 1px solid var(--color-border);
+}
+
+nav a:first-of-type {
+    border: 0;
+}
+
+@media (min-width: 1024px) {
+    header {
+        display: flex;
+        place-items: center;
+        padding-right: calc(var(--section-gap) / 2);
+    }
+
+    .logo {
+        margin: 0 2rem 0 0;
+    }
+
+    header .wrapper {
+        display: flex;
+        place-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        text-align: left;
+        margin-left: -1rem;
+        font-size: 1rem;
+
+        padding: 1rem 0;
+        margin-top: 1rem;
+    }
 }
 </style>
