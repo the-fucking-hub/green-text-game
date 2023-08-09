@@ -22,7 +22,7 @@ The architecture will be improve.
     for example I will put pinia as a plugin ^^,
 )
 
-Tenno 
+Tenno
 
 ## tech I want to use/ try
 
@@ -32,6 +32,25 @@ Tenno
 - more of vite (globals etc...)
 - go ( I Do AYDENHEX ! )
 - more svg/canvas api
+
+
+## basic idear of the UI
+
+### styles guidelines
+
+vercel (because it's cool)
+
+### UX (wip)
+
+first page : landing
+
+As player I want to set a playerName because I don't want to put my real name and I want to be reconisable among my friends.
+
+second page : Lobby (epic)
+
+As player I want to see all the player before playing because I want to verify if all the invited player are ready to play before lauching the game.
+
+
 
 ## Project Setup
 
